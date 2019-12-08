@@ -54,14 +54,14 @@
 	{#if $open}
 	<button
 		class={`left ${leftDisabled}`}
-		transition:scale="{{duration: 500, delay: 2000, opacity: 0.5, start: 0, easing: quintOut}}"
+		transition:scale="{{duration: 500, delay: 1000, opacity: 0.5, start: 0, easing: quintOut}}"
 		on:click|preventDefault={updatePrev}
 	>
 		PREV
 	</button>
 	<button
 		class={`right ${rightDisabled}`}
-		transition:scale="{{duration: 500, delay: 2000, opacity: 0.5, start: 0, easing: quintOut}}"
+		transition:scale="{{duration: 500, delay: 1000, opacity: 0.5, start: 0, easing: quintOut}}"
 		on:click|preventDefault={updateNext}
 	>
 	NEXT
@@ -97,7 +97,7 @@
 		border-radius: 2rem;
 		text-decoration: none;
 		cursor: pointer;
-		bottom: -.5rem;
+		bottom: 0rem;
 		background-color: #54546c;
 		transition: .3s;
 	}

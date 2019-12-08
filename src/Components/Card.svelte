@@ -27,13 +27,13 @@
 	.card {
 		width: 80%;
 		max-width: 700px;
-		height: 65%;
+		height: 85%;
 		background: rgba(255,255,255,.9);
 		border-radius: 1.5rem;
-		padding: 1.5rem;
+		padding: .5rem 1.5rem;
 		position: absolute;
 		z-index: 5;
-		bottom: 20%;
+		bottom: 24%;
 		left: 50%;
 		transform: translate(-50%, 20%);
 		overflow: hidden;
