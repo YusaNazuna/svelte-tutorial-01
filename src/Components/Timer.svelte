@@ -26,10 +26,10 @@
 <style>
 	.time {
 		color: #fff1b9;
-		font-size: 6em;
-		letter-spacing: .1em;
+		font-size: 6rem;
+		letter-spacing: .3rem;
 		position: absolute;
-		top: 30px;
+		top: 1rem;
 		left: 50%;
 		transform: translateX(-50%);
 	}

@@ -41,6 +41,7 @@
 			cancelAnimationFrame(frame);
 		};
 	});
+
 </script>
 
 <style>
@@ -49,17 +50,18 @@
 		height: 100%;
 		-webkit-mask-image: url('/images/cat01.svg');
 		mask-image: url('/images/cat01.svg');
-    -webkit-mask-position: -50% 180%;
-    mask-position: -50% 180%;
+    -webkit-mask-position: -120% 180%;
+    mask-position: -120% 180%;
     -webkit-mask-size: 80% 80%;
     mask-size: 80% 80%;
     -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
 	}
 </style>
 
-<canvas
-	bind:this={canvas}
-	width={width}
-	height={height}
-></canvas>
+	<canvas
+		bind:this={canvas}
+		width={width}
+		height={height}
+	></canvas>
+
