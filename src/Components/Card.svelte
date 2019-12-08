@@ -1,14 +1,25 @@
 <script>
+	import { onMount } from 'svelte';
+	import { derived } from 'svelte/store';
 	import { fly } from 'svelte/transition';
 	import { open } from '../stores.js';
+	import CardInner from './CardInner.svelte';
 
-	let visible;
-	const unsubscribe = open.subscribe(value => visible = value)
+	let buttonVisible = false;
+
+	onMount(() => {
+		setTimeout(() => {
+			buttonVisible = true;
+		}, 2000);
+	})
+
 </script>
 
-{#if visible}
+
+
+{#if $open}
 	<div class="card" transition:fly="{{ y: 100, duration: 1000 }}">
-	demo
+		<CardInner />
 	</div>
 {/if}
 
@@ -25,5 +36,6 @@
 		bottom: 20%;
 		left: 50%;
 		transform: translate(-50%, 20%);
+		overflow: hidden;
 	}
 </style>
